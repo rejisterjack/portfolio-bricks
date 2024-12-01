@@ -8,9 +8,9 @@ import config from '../react-bricks/config'
 const ReactBricksApp = ({ Component, pageProps }: AppProps) => {
   // Color Mode Management
   const savedColorMode =
-    typeof window === 'undefined' ? '' : localStorage.getItem('color-mode')
+    typeof window === 'undefined' ? 'dark' : localStorage.getItem('color-mode')
 
-  const [colorMode, setColorMode] = useState(savedColorMode || 'light')
+  const [colorMode, setColorMode] = useState(savedColorMode || 'dark')
 
   const { setTheme } = useTheme()
 
