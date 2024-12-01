@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Your custom styles here */
+a[href="https://reactbricks.com?utm_campaign=site-badge"]
+{
+  display: none;
+}
